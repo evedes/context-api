@@ -1,0 +1,32 @@
+.App {
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+
+  .control-panel {
+    padding: 30px;
+    height: 500px;
+    border: 5px dashed blue;
+  }
+
+  .themes-toolbar {
+    padding: 30px;
+    height: 350px;
+    border: 5px dashed red;
+  }
+
+  .themed-button {
+    padding: 30px;
+    height: 200px;
+  }
+
+  .theme-red {
+    color: white;
+    background-color: red;
+  }
+  
+  .theme-blue {
+    color: white;
+    background-color: blue;
+  }
+}
