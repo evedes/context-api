@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.scss';
 
@@ -32,7 +32,11 @@ class ThemeProvider extends React.Component {
   }
 }
 
-class App extends Component {
+export default class App extends React.Component {
+  state = {
+    user: this.props.user,
+  }
+
   render() {
     console.log('App has rendered!');
     return (
@@ -87,5 +91,3 @@ const Button = () => {
       }
     </ThemeContext.Consumer>
   )}
-
-export default App;
